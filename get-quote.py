@@ -1,12 +1,23 @@
 import random
+import sys
 
-def primary():
-  f = open("python-random-quote\quotes.txt")
+def writeQuotes():
+  f = open("python-random-quote\quotes.txt", "a")
+  f.write(sys.stdin.readline())
+  f.close()
+
+def main():
+  f = open("python-random-quote\quotes.txt", "r")
   quotes = f.readlines()
   f.close()
-  last = 13
-  rnd = random.randint(0,last)
-  print(quotes[rnd])
 
+  last=len(quotes)
+  rnd = random.randint(0,last)
+  print(quotes[rnd].rstrip())
+  
+  rnd = random.randint(0,last)
+  print(quotes[rnd].rstrip())
+  
 if __name__== "__main__":
-  primary()
+  writeQuotes()
+  main()
