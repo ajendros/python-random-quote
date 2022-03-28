@@ -12,3 +12,6 @@ Favor focus over features
 Avoid administrative distraction
 Design for failure
 Keep it logically awesome
+Water is Water
+Wishful thinking is dangerous
+Homebias is a thing
